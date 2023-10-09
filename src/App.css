@@ -1,0 +1,482 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+::-webkit-scrollbar { width: 0;}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Snippet&display=swap');
+/*--------------------*/
+
+header {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  padding: 20px;
+  color: #fff;
+}
+
+.AllHeader{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.yslygi {
+  display: flex;
+  width: fit-content;
+  padding: 10px;
+}
+
+.ysl_btn {
+  background: red;
+  padding: 10px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.ysl_btn svg {
+  width: 25px;
+  height: 25px;
+  fill: #fff;
+}
+
+.navigator {
+  display: flex;
+  gap: 100px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.teg {
+  font-size: 20px;
+  font-weight: 400;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.phone {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+main {
+  padding: 100px;
+  height: 70vh;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.back {
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: -5;
+}
+
+.back img {
+  width: 100%;
+  height: 100vh;
+  border-radius: 50px;
+}
+
+.add {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 68px;
+  color: #fff;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.zapis {
+  background: red;
+  border-radius: 7px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 32px;
+  padding: 10px 50px;
+}
+
+.zapis svg {
+  width: 40px;
+  height: 40px;
+}
+
+.konsult {
+  background: transparent;
+  border-radius: 7px;
+  border: 2px solid #fff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 32px;
+  padding: 10px 50px;
+}
+
+.konsult svg {
+  width: 40px;
+  height: 40px;
+}
+
+.blocks {
+  height: fit-content;
+  display: grid;
+  width: 90%;
+  justify-content: center;
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+}
+.block{
+  background: #1E1E1E;
+  border-radius: 20px;
+  height: 300px;
+  padding:5px 20px;
+  color: #fff;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+position: relative;
+overflow: scroll;
+}
+
+.block:hover {
+  background: red;
+  transition: all .5s ease-in-out;
+}
+
+.block:not(:hover) {
+  transition: all .5s ease-in-out;
+}
+
+
+.block:hover img {
+  right: -20px;
+  transition: all .5s ease-in-out;
+}
+
+
+.block:not(:hover) img {
+  transition: all .5s ease-in-out;
+}
+
+.block:hover .selling{
+  background: #1E1E1E;
+  transition: all .5s ease-in-out;
+}
+
+.block:not(:hover) .selling {
+  transition: all .5s ease-in-out;
+}
+
+.block h4 {
+  font-size: 24px;
+}
+.block p {
+  font-size: 20px;
+}
+
+.block img{
+  position: absolute;
+  right: 0;
+}
+
+.selling{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: red;
+  color: #fff;
+  font-size: 14px;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.bloks_all {
+  height: 100vh;
+  margin-top: 15%;
+}
+.examples {
+  padding: 100px;
+  margin-top: -15%;
+  border-radius: 50px;
+  color: #000;
+  background: #fff;
+  height: 100vh;
+}
+
+.raboti {
+  font-size: 62px;
+  font-weight: 600;
+}
+.topof {
+  display: flex;
+  justify-content: space-between
+}
+
+.buttons-prev-next {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.buttons-prev-next button {
+  background: transparent;
+  border-radius: 50px;
+}
+
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 5px;
+  justify-content: space-between;
+  height: fit-content;
+  border-radius: 15px;
+  position: relative;
+}
+
+
+.texts {
+  padding: 20px;  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.else {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.item .count-photo{
+background: #000;
+font-weight: 600;
+padding: 8px;
+border-radius: 4px;
+position: absolute;
+color: #fff;
+font-size: 16px;
+right: 20px;
+top: 20px;
+}
+
+.items {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.socials {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 32px;
+background: #F5F5F5;
+padding: 40px;
+height: 8vw;
+}
+
+.socials  h6 {
+  font-size: 32px;
+  line-height: 36px;
+  max-width: 600px;
+  font-weight: 600;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+}
+
+.icon {
+  cursor: pointer;
+  padding: 15px 80px ;
+  border-radius: 10px;
+  background: #fff;
+  color: #282828;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 19.2px */
+}
+
+.icon:hover {
+  background: rgb(201, 201, 201);
+  transition: all .5s ease-in-out;
+}
+
+.icon:not(:hover) {
+  transition: all .5s ease-in-out;
+}
+
+.UCT {
+  border-radius: 32px;
+  background: #FF001D;
+  margin-top: 2%;
+  padding: 20px;
+  height: fit-content;
+}
+
+.UCT .blocks {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.UCT .blocks .block {
+  background: transparent;
+  width: 45%;
+  height: 60vh;
+}
+
+.UCT .blocks .block h2 {
+  font-size: 56px;
+}
+
+.UCT .blocks .block p {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.UCT .blocks .left {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 40%;
+  background: transparent;
+  align-items: start;
+}
+
+.UCT .blocks .block .buttons {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.UCT .blocks .block .buttons .zapis-utc {
+  background: #fff;
+  color: #000;
+  border: 2px solid #fff;
+  font-size: 24px;
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+
+.UCT .blocks .block .buttons .konsult-utc {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 24px;
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+
+
+.UCT .blocks .block .buttons .zapis-utc:hover {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: all .5s ease-in-out;
+}
+
+.UCT .blocks .block .buttons .zapis-utc:not(:hover) {
+  transition: all .5s ease-in-out;
+}
+
+
+.UCT .blocks .block .buttons .konsult-utc:hover {
+  background: #fff;
+  color: #000;
+  transition: all .5s ease-in-out;
+  border: 2px solid #fff;
+}
+
+
+.UCT .blocks .block .buttons .konsult-utc:not(:hover) {
+  transition: all .5s ease-in-out;
+}
+
+.UCT .yslugi {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.yslugi .ysl {
+  height: fit-content;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 4%;
+}
+
+.yslugi .ysl h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 5%;
+}
+
+
+.yslugi .ysl p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 5%;
+}
+
+.yslugi .ysl svg {
+  width: 60px;
+  height: 60px;
+}
